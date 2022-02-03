@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ObjectDetect_v1</string>
+    <string name="logo_str">Real-Time Object Detection</string>
+    <string name="UsernameHint">Username</string>
+    <string name="Email">Email</string>
+    <string name="Passwd">Password</string>
+    <string name="ConPasswd"> Confirm Password</string>
+    <string name="LoginButton">Login</string>
+    <string name="SignUpButton">SignUp</string>
+    <string name="donthaveACC">Don\'t have an Account</string>
+    <string name="forgetPasswd">Forget Password ?</string>
+    <string name="AlreadyhvACC">Already Have an Account ?</string>
+</resources>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signUpActivity">
+
+  <ImageView
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:src="@drawable/loginlogo"
+    android:id="@+id/loginlogo"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/loginlogo"
+      android:orientation="vertical"
+      android:layout_margin="30dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUp_username_Layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/signUp_username_InputEditText"
+          android:maxLines="1"
+          android:hint="@string/UsernameHint"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUp_Email_Layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/signUp_EmailInputEditText"
+          android:maxLines="1"
+          android:hint="@string/Email"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signUp_passwd_Layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/signUp_passwd_InputEditText1"
+          android:maxLines="1"
+          android:inputType="textPassword"
+          android:hint="@string/Passwd"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/passwd_Layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+      <com.google.android.material.textfield.TextInputEditText
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/signUp_passwd_InputEditText2"
+          android:maxLines="1"
+          android:inputType="textPassword"
+          android:hint="@string/ConPasswd"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/SignUpButton"
+        android:id="@+id/signUpButton"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/forgetPasswd"
+          android:id="@+id/forgetpasswd"
+          android:layout_below="@+id/signupButton"
+          android:clickable="true"
+          android:onClick="onClick"
+          />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/AlreadyhvACC"
+          android:layout_marginLeft="130dp"
+          android:id="@+id/HaveAccount"
+          android:layout_below="@+id/loginButton"
+          android:layout_gravity="right"
+          android:clickable="true"
+          android:onClick="onClick"
+          />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+
+</RelativeLayout>
