@@ -10,14 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ObjectDetect_v11">
         <activity
-            android:name=".MainActivity"
+            android:name=".UpdateProfile"
             android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
         <activity
             android:name=".signUpActivity"
             android:exported="false" />
         <activity
             android:name=".loginActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".splashscreen"
             android:exported="true">

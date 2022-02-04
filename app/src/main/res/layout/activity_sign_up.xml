@@ -11,27 +11,31 @@
     android:layout_width="200dp"
     android:layout_height="200dp"
     android:src="@drawable/loginlogo"
-    android:id="@+id/loginlogo"
+    android:id="@+id/signUplogo"
     android:layout_centerHorizontal="true"
     android:layout_marginTop="20dp"/>
 
   <LinearLayout
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_below="@+id/loginlogo"
+      android:layout_below="@+id/signUplogo"
       android:orientation="vertical"
-      android:layout_margin="30dp">
+      android:layout_margin="30dp"
+      >
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/signUp_username_Layout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
       <com.google.android.material.textfield.TextInputEditText
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:id="@+id/signUp_username_InputEditText"
+          android:id="@+id/signUp_username"
           android:maxLines="1"
+          android:inputType="text"
           android:hint="@string/UsernameHint"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -43,9 +47,12 @@
       <com.google.android.material.textfield.TextInputEditText
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:id="@+id/signUp_EmailInputEditText"
+          android:id="@+id/signUp_Email"
           android:maxLines="1"
-          android:hint="@string/Email"/>
+          android:hint="@string/Email"
+          android:inputType="textEmailAddress"
+          android:focusable="true"
+          android:focusableInTouchMode="true"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -56,10 +63,12 @@
       <com.google.android.material.textfield.TextInputEditText
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:id="@+id/signUp_passwd_InputEditText1"
+          android:id="@+id/signUp_passwd"
           android:maxLines="1"
           android:inputType="textPassword"
-          android:hint="@string/Passwd"/>
+          android:hint="@string/Passwd"
+          android:focusable="true"
+          android:focusableInTouchMode="true"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -70,10 +79,12 @@
       <com.google.android.material.textfield.TextInputEditText
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:id="@+id/signUp_passwd_InputEditText2"
+          android:id="@+id/signUp_passwd2"
           android:maxLines="1"
           android:inputType="textPassword"
-          android:hint="@string/ConPasswd"/>
+          android:hint="@string/ConPasswd"
+          android:focusable="true"
+          android:focusableInTouchMode="true"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -111,6 +122,15 @@
           />
 
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        style="?android:attr/progressBarStyle"
+        />
 
   </LinearLayout>
 
