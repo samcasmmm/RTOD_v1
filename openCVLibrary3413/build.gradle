@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdkVersion 32
@@ -15,4 +16,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
 }
