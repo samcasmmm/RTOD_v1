@@ -9,5 +9,5 @@
     <string name="SignUpButton">SignUp</string>
     <string name="donthaveACC">Don\'t have an Account</string>
     <string name="forgetPasswd">Forget Password ?</string>
-    <string name="AlreadyhvACC">Already Have an Account ?</string>
+    <string name="AlreadyhvACC">Have an Account</string>
 </resources>

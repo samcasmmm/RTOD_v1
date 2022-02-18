@@ -74,7 +74,7 @@
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/passwd_Layout"
+        android:id="@+id/signUp_passwd_Layout2"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
       <com.google.android.material.textfield.TextInputEditText
           android:layout_width="match_parent"
@@ -82,10 +82,12 @@
           android:id="@+id/signUp_passwd2"
           android:maxLines="1"
           android:inputType="textPassword"
-          android:hint="@string/ConPasswd"
+          android:hint="Confirm Password"
           android:focusable="true"
           android:focusableInTouchMode="true"/>
     </com.google.android.material.textfield.TextInputLayout>
+
+
 
     <Button
         android:layout_width="match_parent"
@@ -113,7 +115,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="@string/AlreadyhvACC"
-          android:layout_marginLeft="130dp"
+          android:layout_marginLeft="120dp"
           android:id="@+id/HaveAccount"
           android:layout_below="@+id/loginButton"
           android:layout_gravity="right"
