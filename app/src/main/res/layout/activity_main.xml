@@ -39,4 +39,12 @@
 
     </LinearLayout>
 
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="330dp"
+        android:layout_marginTop="640dp"
+        android:background="@drawable/robot"
+        android:clickable="true"/>
+
 </RelativeLayout>
