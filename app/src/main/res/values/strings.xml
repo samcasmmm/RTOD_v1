@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ObjectDetect_v1</string>
+    <string name="app_name">RTOD</string>
     <string name="logo_str">Real-Time Object Detection</string>
     <string name="UsernameHint">Username</string>
     <string name="Email">Email</string>

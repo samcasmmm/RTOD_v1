@@ -21,3 +21,4 @@ android {
 dependencies {
     implementation 'com.google.firebase:firebase-auth:19.2.0'
 }
+
