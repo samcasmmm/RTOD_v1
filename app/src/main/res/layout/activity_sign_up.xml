@@ -23,83 +23,72 @@
       android:layout_margin="30dp"
       >
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/signUp_username_Layout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:focusable="true"
-        android:focusableInTouchMode="true">
-      <com.google.android.material.textfield.TextInputEditText
+    <EditText
           android:layout_width="match_parent"
-          android:layout_height="wrap_content"
+          android:layout_height="50dp"
           android:id="@+id/signUp_username"
           android:maxLines="1"
           android:inputType="text"
-          android:hint="@string/UsernameHint"/>
-    </com.google.android.material.textfield.TextInputLayout>
+          android:hint="@string/UsernameHint"
+          android:padding="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/edittext_bg"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/signUp_Email_Layout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-      <com.google.android.material.textfield.TextInputEditText
+    <EditText
           android:layout_width="match_parent"
-          android:layout_height="wrap_content"
+          android:layout_height="50dp"
           android:id="@+id/signUp_Email"
           android:maxLines="1"
           android:hint="@string/Email"
           android:inputType="textEmailAddress"
           android:focusable="true"
+          android:padding="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/edittext_bg"
           android:focusableInTouchMode="true"/>
-    </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/signUp_passwd_Layout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-      <com.google.android.material.textfield.TextInputEditText
+    <EditText
           android:layout_width="match_parent"
-          android:layout_height="wrap_content"
+          android:layout_height="50dp"
           android:id="@+id/signUp_passwd"
           android:maxLines="1"
           android:inputType="textPassword"
           android:hint="@string/Passwd"
           android:focusable="true"
-          android:focusableInTouchMode="true"/>
-    </com.google.android.material.textfield.TextInputLayout>
+          android:focusableInTouchMode="true"
+          android:padding="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/edittext_bg"
+        />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/signUp_passwd_Layout2"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-      <com.google.android.material.textfield.TextInputEditText
+    <EditText
           android:layout_width="match_parent"
-          android:layout_height="wrap_content"
+          android:layout_height="50dp"
           android:id="@+id/signUp_passwd2"
           android:maxLines="1"
           android:inputType="textPassword"
           android:hint="Confirm Password"
           android:focusable="true"
-          android:focusableInTouchMode="true"/>
-    </com.google.android.material.textfield.TextInputLayout>
-
+          android:focusableInTouchMode="true"
+          android:padding="10dp"
+          android:layout_marginTop="10dp"
+          android:background="@drawable/edittext_bg"/>
 
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/SignUpButton"
         android:id="@+id/signUpButton"
-        android:textColor="@color/white" />
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/SignUpButton"
+        android:textColor="@color/white"
+        android:background="@drawable/custombtn"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_marginTop="10dp"
         >
       <TextView
           android:layout_width="wrap_content"

@@ -27,66 +27,50 @@
             android:layout_gravity="center"
             />
 
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Name_Layout"
+            android:id="@+id/EditName"
+            android:maxLines="1"
+            android:hint="Name"
+            android:padding="10dp"
             android:layout_marginTop="15dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/EditName"
-                android:maxLines="1"
-                android:hint="Name"
-                android:inputType="text"
+            android:background="@drawable/edittext_bg"
+            android:inputType="text"
             />
-        </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Email_Layout"
+            android:id="@+id/EditEmail"
+            android:maxLines="1"
+            android:hint="Email"
+            android:padding="10dp"
             android:layout_marginTop="15dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/EditEmail"
-                android:maxLines="1"
-                android:hint="Email"
-                android:inputType="textEmailAddress"/>
-        </com.google.android.material.textfield.TextInputLayout>
+            android:background="@drawable/edittext_bg"
+            android:inputType="textEmailAddress"/>
 
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Phone_Layout"
+            android:id="@+id/EditPhone"
+            android:maxLines="1"
+            android:hint="Phone"
+            android:padding="10dp"
             android:layout_marginTop="15dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/EditPhone"
-                android:maxLines="1"
-                android:hint="Phone"
-                android:inputType="phone"/>
-        </com.google.android.material.textfield.TextInputLayout>
+            android:background="@drawable/edittext_bg"
+            android:inputType="phone"/>
 
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/age_Layout"
+            android:id="@+id/EditPAge"
+            android:maxLines="1"
+            android:hint="DOB"
+            android:padding="10dp"
             android:layout_marginTop="15dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/EditPAge"
-                android:maxLines="1"
-                android:hint="DOB"
-                android:inputType="date"/>
-        </com.google.android.material.textfield.TextInputLayout>
+            android:background="@drawable/edittext_bg"
+            android:inputType="date"/>
 
         <Button
             android:layout_width="match_parent"
@@ -94,6 +78,9 @@
             android:text="SAVE"
             android:layout_marginTop="15dp"
             android:id="@+id/SaveBTN"
+            android:background="@drawable/custombtn"
+            android:textSize="20sp"
+            android:textStyle="bold"
             android:textColor="@color/white" />
 
 

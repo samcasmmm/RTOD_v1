@@ -45,6 +45,7 @@
         android:layout_marginStart="330dp"
         android:layout_marginTop="640dp"
         android:background="@drawable/robot"
-        android:clickable="true"/>
+        android:id="@+id/id_chatBot"
+        android:clickable="true" />
 
 </RelativeLayout>

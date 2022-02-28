@@ -26,69 +26,48 @@
             android:layout_marginTop="24dp"
             android:src="@drawable/loginlogo" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/Name_Layout"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <EditText
+            android:id="@+id/EditName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp">
+            android:hint="Name"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_bg"
+            android:inputType="text"
+            android:maxLines="1" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/EditName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Name"
-                android:inputType="text"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/Email_Layout"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <EditText
+            android:id="@+id/EditEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp">
+            android:hint="Email"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_bg"
+            android:inputType="textEmailAddress"
+            android:maxLines="1" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/EditEmail"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Email"
-                android:inputType="textEmailAddress"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/Phone_Layout"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        <EditText
+            android:id="@+id/EditPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/EditPhone"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Phone"
-                android:inputType="phone"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/age_Layout"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/EditPAge"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="DOB"
-                android:inputType="date"
-                android:maxLines="1" />
-        </com.google.android.material.textfield.TextInputLayout>
+            android:hint="Phone"
+            android:padding="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_bg"
+            android:inputType="phone"
+            android:maxLines="1" />
+      <EditText
+          android:id="@+id/EditPAge"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="DOB"
+          android:padding="10dp"
+          android:layout_marginTop="15dp"
+          android:background="@drawable/edittext_bg"
+          android:inputType="date"
+          android:maxLines="1" />
             <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -121,15 +100,18 @@
             android:id="@+id/changeProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:text="Change Profile"
+            android:background="@drawable/custombtn"
+            android:textStyle="bold"
             android:textColor="@color/white" />
 
         <Button
             android:id="@+id/resetPasswordLocal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custombtn"
             android:text="Reset Password"
             android:textColor="@color/white" />
 
@@ -137,7 +119,8 @@
             android:id="@+id/logoutBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custombtn"
             android:text="Logout"
             android:onClick="logout"
             android:textColor="@color/white" />

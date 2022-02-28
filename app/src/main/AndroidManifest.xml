@@ -3,6 +3,7 @@
     package="com.example.objectdetect_v1">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <uses-feature
         android:name="android.hardware.camera"
@@ -23,13 +24,16 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ObjectDetect_v1">
+        android:theme="@style/Theme.ObjectDetect_v11">
+        <activity
+            android:name=".chatbot.MainActivity"
+            android:exported="false" />
         <activity
             android:name=".DecisionActivity"
             android:exported="false" />
         <activity
             android:name=".CameraActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".UpdateProfile"
             android:exported="false" />

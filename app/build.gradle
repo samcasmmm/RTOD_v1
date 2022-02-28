@@ -82,7 +82,11 @@ dependencies {
     implementation 'org.tensorflow:tensorflow-lite-task-text:0.1.0'
 
 
+    //retrofit dependency
+//
+//    implementation 'com.squareup.retrofit2:retrofit2:2.9.0'
+//    implementation 'com.squareup.retrofit2:converter-gson:2.50'
 
-
-
+// gif dependency
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
 }
