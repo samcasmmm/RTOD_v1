@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:text="Real-Time Object Detection"
         android:layout_marginTop="15dp"
+        android:background="@drawable/custombtn"
         android:id="@+id/ObjectDetectionBTN"
         android:textColor="@color/white" />
 
@@ -26,6 +27,7 @@
         android:layout_height="wrap_content"
         android:text="Hand Sign Detection"
         android:layout_marginTop="15dp"
+            android:background="@drawable/custombtn"
         android:id="@+id/handSignBTN"
         android:textColor="@color/white" />
 
@@ -35,7 +37,9 @@
         android:text="Edit Profile"
         android:layout_marginTop="15dp"
         android:id="@+id/EditProfileBTN"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:background="@drawable/custombtn"
+        />
 
     </LinearLayout>
 
