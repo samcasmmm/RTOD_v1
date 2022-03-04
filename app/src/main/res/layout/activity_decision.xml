@@ -50,10 +50,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:background="@drawable/custombtn"
+                android:background="@drawable/outlined_btn"
                 android:text="Skip"
+                android:drawableLeft="@drawable/ic_skip"
+
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
         </LinearLayout>

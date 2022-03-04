@@ -39,12 +39,11 @@ public class MainActivity extends AppCompatActivity {
         chatsRV = findViewById(R.id.idRVChat);
         userMsgEdit = findViewById(R.id.EditMSG);
         sendMsgFAB = findViewById(R.id.idFABSend);
+        chatsModelsArrayList = new ArrayList<>();
         chatRV_adapter = new ChatRV_Adapter(chatsModelsArrayList,this);
         LinearLayoutManager manager = new LinearLayoutManager(this);
-//        chatsRV.setLayoutManager(new LinearLayoutManager(this));
         chatsRV.setLayoutManager(manager);
         chatsRV.setAdapter(chatRV_adapter);
-        System.out.println(chatsModelsArrayList.size());
 
 
         sendMsgFAB.setOnClickListener(new View.OnClickListener() {

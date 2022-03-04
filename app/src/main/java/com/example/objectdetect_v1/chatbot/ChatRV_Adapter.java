@@ -69,7 +69,6 @@ public class ChatRV_Adapter extends RecyclerView.Adapter {
 
     @Override
     public int getItemCount() {
-//        System.out.println(chatsModelsArrayList.size());
         return chatsModelsArrayList.size();
     }
 
