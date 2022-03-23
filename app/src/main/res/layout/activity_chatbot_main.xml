@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:layout_above="@+id/idRLMsg"
         android:alpha="0.7"
-        android:background="@drawable/chat_overlay"/>
+        android:background="@drawable/chat_overlay" />
 
     <RelativeLayout
         android:layout_width="match_parent"

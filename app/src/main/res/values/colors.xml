@@ -16,4 +16,7 @@
     <color name="watersprout">#9bf6ff</color>
     <color name="purple100">#dab6fc</color>
     <color name="purple150">#b9bbff</color>
+    <color name="brandiesBlue">#0061ff</color>
+    <color name="brandiesBlue70">#700061ff</color>
+    <color name="electricBlue">#60efff</color>
 </resources>

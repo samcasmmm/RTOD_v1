@@ -34,6 +34,15 @@
         <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="Scan Len"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/custombtn2"
+        android:id="@+id/scan_lenBTN"
+        android:textColor="@color/white" />
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Edit Profile"
         android:layout_marginTop="15dp"
         android:id="@+id/EditProfileBTN"

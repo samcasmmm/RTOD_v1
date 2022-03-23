@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    Button RTODetectionBtn,HandSignBtn,EditProfileBtn;
+    Button RTODetectionBtn,HandSignBtn,EditProfileBtn,scan_lenBTN;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         HandSignBtn = findViewById(R.id.handSignBTN);
         EditProfileBtn = findViewById(R.id.EditProfileBTN);
         chatBotImg = findViewById(R.id.id_chatBot);
+        scan_lenBTN = findViewById(R.id.scan_lenBTN);
 
 
         chatBotImg.setOnClickListener(new View.OnClickListener() {
@@ -56,6 +57,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,CameraActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            }
+        });
+
+        scan_lenBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, com.example.objectdetect_v1.RTOD_Len.MainRLenActivity.class));
             }
         });
     }
