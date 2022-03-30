@@ -56,6 +56,12 @@ public class MainActivity extends AppCompatActivity {
                 getResponse(userMsgEdit.getText().toString());
                 userMsgEdit.setText("");
 
+
+
+
+
+                
+
             }
         });
 
